@@ -39,6 +39,45 @@ header img{
 
 
 
+
+/*style rule for navigation menu*/
+#nav_menu ul{
+    list-style-type: none;
+    position:relative;
+}
+#nav_menu ul li{
+    float:left;
+}
+#nav_menu ul li a{
+    display:block;
+    width:160px;
+    text-align:center;
+    text-decoration:none;
+    color:white;
+    font-weight: bold;
+    background-color:var(--global-color-1);
+    padding:1em 0;
+}
+#nav_menu ul li a.current{
+    color: yellow;
+}
+#nav_menu ul ul{
+    display : none;
+    position : absolute;
+    top:100%
+}
+#nav_menu ul li:hover > ul{
+    display: block;
+}
+#nav_menu ul ul li{
+    clear : both;
+}
+#nav_menu > ul::after{
+    content : "";
+    clear : both;
+    display : block;
+}
+
 /*stylesheet for main area*/
 blockquote {
     font-style: italic;
@@ -70,6 +109,10 @@ main ul{
 }
 main li{
     padding-bottom: 5px;
+}
+
+main section > ul{
+    list-style-type: circle;
 }
 
 
