@@ -141,7 +141,7 @@ aside h1{
     padding : 20px 0 .5em;
 }
 
-.speakers{
+.speaker{
     padding-bottom: 15px;
 }
 
@@ -245,11 +245,11 @@ a:focus, a:hover{font-style:italic;}
     article img{
         max-width: 30%;
     }
-    div{
+    #speakers{
         column-count: 2;
     }
-    #nav_menu{ display:none;}
-    #mobile_menu{display:block}
+    #nav_menu{display:none;}
+    #mobile_menu{display:block;}
     .slicknav_menu{
         background-color: #800000 !important;
     }
